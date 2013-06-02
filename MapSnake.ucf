@@ -1,0 +1,66 @@
+#// Company: Boston University
+#// Engineer: Oliver H. Baverstam and Clement Su
+#// 
+#// Create Date:    12:59:40 04/09/2013 
+#// Design Name: EC311 Support Files
+#// Module Name:    vga_display (UCF)
+#// Project Name: EK 311 Final Project
+#// Target Devices: xc6slx16-3csg324
+#// Tool versions: XILINX ISE 13.3
+#// Description: 
+#//
+#// Dependencies: vga_controller_640_60
+#//
+#// Revision: 
+#// Revision 0.01 - File Created
+#// Additional Comments: This file is specific to xc6slx16-3csg324
+#//
+#//////////////////////////////////////////////////////////////////////////////////
+
+###############################
+# Specify color outputs:
+NET B LOC = T7;
+NET R LOC = N7;
+NET G LOC = V6;
+
+###############################
+# Specify sync outputs:
+NET "HS" LOC = N6;
+NET "VS" LOC = P7;
+
+###############################
+# Specify direction inputs:
+NET "left" LOC = C4;
+NET "right" LOC = D9;
+NET "up" LOC = A8;
+NET "down" LOC = C9;
+NET "reset" LOC =T10;
+
+###############################
+# Specify controls:
+NET "clk" LOC = V10;
+
+###############################
+#Map LEDs
+
+NET "AN[0]" LOC=N16;
+NET "AN[1]" LOC=N15;
+NET "AN[2]" LOC=P18;
+NET "AN[3]" LOC=P17;
+NET "seven[0]" LOC = T17;
+NET "seven[1]" LOC = T18;
+NET "seven[2]" LOC = U17;
+NET "seven[3]" LOC = U18;
+NET "seven[4]" LOC = M14;
+NET "seven[5]" LOC = N14;
+NET "seven[6]" LOC = L14;
+
+###############################
+#Map speeds
+NET "speed1" LOC = T5;
+NET "speed2" LOC = V8;
+
+###############################
+#Map Levels
+NET "level1" LOC = U8;
+NET "level2" LOC = N8;
