@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# PlanAhead v13.3 (64-bit)
+# Build 147507 by hdbuild on Tue Oct  4 19:13:50 MDT 2011
+# Start of session at: Wed Apr 10 16:50:36 2013
+# Process ID: 4000
+# Log file: X:/Desktop/EK311/Snake_Final_Project/planAhead_run_1/planAhead.log
+# Journal file: X:/Desktop/EK311/Snake_Final_Project/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source X:/Desktop/EK311/Snake_Final_Project/pa.fromHdl.tcl
+startgroup
+set_property loc PAD176 [get_ports VS]
+endgroup
+exit
+stop_gui

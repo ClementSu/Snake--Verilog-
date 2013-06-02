@@ -1,0 +1,531 @@
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EK311/Snake_Final_Project/Snake.xst" -ofn "X:/Desktop/EK311/Snake_Final_Project/Snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MapSnake.ucf -p xc6slx16-csg324-3 Snake.ngc Snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Snake_map.ncd Snake.ngd Snake.pcf 
+par -w -intstyle ise -ol high -mt off Snake_map.ncd Snake.ncd Snake.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Snake.twx Snake.ncd -o Snake.twr Snake.pcf -ucf MapSnake.ucf 
+bitgen -intstyle ise -f Snake.ut Snake.ncd 

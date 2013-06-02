@@ -1,0 +1,1616 @@
+Release 13.3 - xst O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.42 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.43 secs
+ 
+--> Reading design: Snake.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Snake.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Snake"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Snake
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "\\ad\eng\users\c\s\csu121-adm\Desktop\EK311\Snake_Final_Project\Snake.v" into library work
+Parsing module <Snake>.
+WARNING:HDLCompiler:568 - "\\ad\eng\users\c\s\csu121-adm\Desktop\EK311\Snake_Final_Project\Snake.v" Line 88: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "\\ad\eng\users\c\s\csu121-adm\Desktop\EK311\Snake_Final_Project\Snake.v" Line 90: Constant value is truncated to fit in <8> bits.
+Parsing module <BCD>.
+Parsing module <binarytoseven>.
+Parsing module <sevenalternate>.
+Parsing module <clk1khz>.
+Parsing module <vga_controller_640_60>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Snake>.
+
+Elaborating module <clk1khz>.
+
+Elaborating module <BCD>.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\c\s\csu121-adm\Desktop\EK311\Snake_Final_Project\Snake.v" Line 484: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\c\s\csu121-adm\Desktop\EK311\Snake_Final_Project\Snake.v" Line 482: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\c\s\csu121-adm\Desktop\EK311\Snake_Final_Project\Snake.v" Line 480: Result of 5-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <sevenalternate>.
+
+Elaborating module <binarytoseven>.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\c\s\csu121-adm\Desktop\EK311\Snake_Final_Project\Snake.v" Line 156: Result of 16-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\c\s\csu121-adm\Desktop\EK311\Snake_Final_Project\Snake.v" Line 157: Result of 16-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\c\s\csu121-adm\Desktop\EK311\Snake_Final_Project\Snake.v" Line 320: Result of 16-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\c\s\csu121-adm\Desktop\EK311\Snake_Final_Project\Snake.v" Line 321: Result of 16-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\c\s\csu121-adm\Desktop\EK311\Snake_Final_Project\Snake.v" Line 332: Result of 16-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\c\s\csu121-adm\Desktop\EK311\Snake_Final_Project\Snake.v" Line 333: Result of 16-bit expression is truncated to fit in 11-bit target.
+
+Elaborating module <vga_controller_640_60>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Snake>.
+    Related source file is "//ad/eng/users/c/s/csu121-adm/desktop/ek311/snake_final_project/snake.v".
+        S_IDLE = 0
+        S_UP = 1
+        S_DOWN = 2
+        S_LEFT = 4
+        S_RIGHT = 8
+        N = 2
+    Found 1-bit register for signal <clk_25Mhz>.
+    Found 26-bit register for signal <slow_count>.
+    Found 1-bit register for signal <slow_clk>.
+    Found 2-bit register for signal <level>.
+    Found 1-bit register for signal <d_up>.
+    Found 1-bit register for signal <d_down>.
+    Found 1-bit register for signal <d_left>.
+    Found 1-bit register for signal <d_right>.
+    Found 11-bit register for signal <foodx>.
+    Found 11-bit register for signal <foody>.
+    Found 16-bit register for signal <score>.
+    Found 1-bit register for signal <lose>.
+    Found 5-bit register for signal <state>.
+    Found 1-bit register for signal <letter1>.
+    Found 1-bit register for signal <letter2>.
+    Found 1-bit register for signal <letter3>.
+    Found 1-bit register for signal <letter4>.
+    Found 1-bit register for signal <letter5>.
+    Found 1-bit register for signal <letter6>.
+    Found 1-bit register for signal <letter7>.
+    Found 1-bit register for signal <letter8>.
+    Found 1-bit register for signal <letter9>.
+    Found 1-bit register for signal <letter10>.
+    Found 1-bit register for signal <letter11>.
+    Found 1-bit register for signal <letter12>.
+    Found 1-bit register for signal <letter13>.
+    Found 1-bit register for signal <letter14>.
+    Found 1-bit register for signal <letter15>.
+    Found 1-bit register for signal <letter16>.
+    Found 1-bit register for signal <letter17>.
+    Found 1-bit register for signal <letter18>.
+    Found 1-bit register for signal <letter19>.
+    Found 1-bit register for signal <letter20>.
+    Found 1-bit register for signal <letter21>.
+    Found 1-bit register for signal <letter22>.
+    Found 1-bit register for signal <letter23>.
+    Found 1-bit register for signal <letter24>.
+    Found 16-bit register for signal <foodxcount>.
+    Found 16-bit register for signal <foodycount>.
+    Found 1-bit register for signal <snakesegment1>.
+    Found 1-bit register for signal <snakesegment2>.
+    Found 1-bit register for signal <snakesegment3>.
+    Found 1-bit register for signal <snakesegment4>.
+    Found 1-bit register for signal <snakesegment5>.
+    Found 1-bit register for signal <snakesegment6>.
+    Found 1-bit register for signal <snakesegment7>.
+    Found 1-bit register for signal <snakesegment8>.
+    Found 1-bit register for signal <snakesegment9>.
+    Found 1-bit register for signal <snakesegment10>.
+    Found 1-bit register for signal <snakesegment11>.
+    Found 1-bit register for signal <snakesegment12>.
+    Found 1-bit register for signal <snakesegment13>.
+    Found 1-bit register for signal <snakesegment14>.
+    Found 1-bit register for signal <snakesegment15>.
+    Found 1-bit register for signal <snakesegment16>.
+    Found 1-bit register for signal <snakesegment17>.
+    Found 1-bit register for signal <snakesegment18>.
+    Found 1-bit register for signal <snakesegment19>.
+    Found 1-bit register for signal <snakesegment20>.
+    Found 1-bit register for signal <snakesegment21>.
+    Found 1-bit register for signal <snakesegment22>.
+    Found 1-bit register for signal <snakesegment23>.
+    Found 1-bit register for signal <snakesegment24>.
+    Found 1-bit register for signal <snakesegment25>.
+    Found 1-bit register for signal <obstacle1>.
+    Found 1-bit register for signal <obstacle2>.
+    Found 1-bit register for signal <obstacle3>.
+    Found 1-bit register for signal <obstacle4>.
+    Found 1-bit register for signal <B>.
+    Found 1-bit register for signal <G>.
+    Found 1-bit register for signal <R>.
+    Found 11-bit register for signal <x25>.
+    Found 11-bit register for signal <y25>.
+    Found 11-bit register for signal <x24>.
+    Found 11-bit register for signal <y24>.
+    Found 11-bit register for signal <x23>.
+    Found 11-bit register for signal <y23>.
+    Found 11-bit register for signal <x22>.
+    Found 11-bit register for signal <y22>.
+    Found 11-bit register for signal <x21>.
+    Found 11-bit register for signal <y21>.
+    Found 11-bit register for signal <x20>.
+    Found 11-bit register for signal <y20>.
+    Found 11-bit register for signal <x19>.
+    Found 11-bit register for signal <y19>.
+    Found 11-bit register for signal <x18>.
+    Found 11-bit register for signal <y18>.
+    Found 11-bit register for signal <x17>.
+    Found 11-bit register for signal <y17>.
+    Found 11-bit register for signal <x16>.
+    Found 11-bit register for signal <y16>.
+    Found 11-bit register for signal <x15>.
+    Found 11-bit register for signal <y15>.
+    Found 11-bit register for signal <x14>.
+    Found 11-bit register for signal <y14>.
+    Found 11-bit register for signal <x13>.
+    Found 11-bit register for signal <y13>.
+    Found 11-bit register for signal <x12>.
+    Found 11-bit register for signal <y12>.
+    Found 11-bit register for signal <x11>.
+    Found 11-bit register for signal <y11>.
+    Found 11-bit register for signal <x10>.
+    Found 11-bit register for signal <y10>.
+    Found 11-bit register for signal <x9>.
+    Found 11-bit register for signal <y9>.
+    Found 11-bit register for signal <x8>.
+    Found 11-bit register for signal <y8>.
+    Found 11-bit register for signal <x7>.
+    Found 11-bit register for signal <y7>.
+    Found 11-bit register for signal <x6>.
+    Found 11-bit register for signal <y6>.
+    Found 11-bit register for signal <x5>.
+    Found 11-bit register for signal <y5>.
+    Found 11-bit register for signal <x4>.
+    Found 11-bit register for signal <y4>.
+    Found 11-bit register for signal <x3>.
+    Found 11-bit register for signal <y3>.
+    Found 11-bit register for signal <x2>.
+    Found 11-bit register for signal <y2>.
+    Found 11-bit register for signal <x1>.
+    Found 11-bit register for signal <y1>.
+    Found 11-bit register for signal <x>.
+    Found 11-bit register for signal <y>.
+    Found 2-bit register for signal <count>.
+    Found 4-bit register for signal <next_state>.
+    Found 11-bit subtractor for signal <y[10]_GND_1_o_sub_488_OUT> created at line 404.
+    Found 11-bit subtractor for signal <x[10]_GND_1_o_sub_490_OUT> created at line 424.
+    Found 2-bit adder for signal <count[1]_GND_1_o_add_1_OUT> created at line 70.
+    Found 26-bit adder for signal <slow_count[25]_GND_1_o_add_5_OUT> created at line 127.
+    Found 16-bit adder for signal <foodxcount[15]_GND_1_o_add_112_OUT> created at line 200.
+    Found 16-bit adder for signal <foodycount[15]_GND_1_o_add_114_OUT> created at line 201.
+    Found 12-bit adder for signal <n1624> created at line 223.
+    Found 12-bit adder for signal <n1627> created at line 223.
+    Found 12-bit adder for signal <n1628> created at line 223.
+    Found 12-bit adder for signal <n1631> created at line 223.
+    Found 12-bit adder for signal <n1632> created at line 225.
+    Found 12-bit adder for signal <n1635> created at line 225.
+    Found 12-bit adder for signal <n1636> created at line 225.
+    Found 12-bit adder for signal <n1639> created at line 225.
+    Found 12-bit adder for signal <n1640> created at line 227.
+    Found 12-bit adder for signal <n1643> created at line 227.
+    Found 12-bit adder for signal <n1644> created at line 227.
+    Found 12-bit adder for signal <n1647> created at line 227.
+    Found 12-bit adder for signal <n1648> created at line 229.
+    Found 12-bit adder for signal <n1651> created at line 229.
+    Found 12-bit adder for signal <n1652> created at line 229.
+    Found 12-bit adder for signal <n1655> created at line 229.
+    Found 12-bit adder for signal <n1656> created at line 231.
+    Found 12-bit adder for signal <n1659> created at line 231.
+    Found 12-bit adder for signal <n1660> created at line 231.
+    Found 12-bit adder for signal <n1663> created at line 231.
+    Found 12-bit adder for signal <n1664> created at line 233.
+    Found 12-bit adder for signal <n1667> created at line 233.
+    Found 12-bit adder for signal <n1668> created at line 233.
+    Found 12-bit adder for signal <n1671> created at line 233.
+    Found 12-bit adder for signal <n1672> created at line 235.
+    Found 12-bit adder for signal <n1675> created at line 235.
+    Found 12-bit adder for signal <n1676> created at line 235.
+    Found 12-bit adder for signal <n1679> created at line 235.
+    Found 12-bit adder for signal <n1680> created at line 237.
+    Found 12-bit adder for signal <n1683> created at line 237.
+    Found 12-bit adder for signal <n1684> created at line 237.
+    Found 12-bit adder for signal <n1687> created at line 237.
+    Found 12-bit adder for signal <n1688> created at line 239.
+    Found 12-bit adder for signal <n1691> created at line 239.
+    Found 12-bit adder for signal <n1692> created at line 239.
+    Found 12-bit adder for signal <n1695> created at line 239.
+    Found 12-bit adder for signal <n1696> created at line 241.
+    Found 12-bit adder for signal <n1699> created at line 241.
+    Found 12-bit adder for signal <n1700> created at line 241.
+    Found 12-bit adder for signal <n1703> created at line 241.
+    Found 12-bit adder for signal <n1704> created at line 243.
+    Found 12-bit adder for signal <n1707> created at line 243.
+    Found 12-bit adder for signal <n1708> created at line 243.
+    Found 12-bit adder for signal <n1711> created at line 243.
+    Found 12-bit adder for signal <n1712> created at line 245.
+    Found 12-bit adder for signal <n1715> created at line 245.
+    Found 12-bit adder for signal <n1716> created at line 245.
+    Found 12-bit adder for signal <n1719> created at line 245.
+    Found 12-bit adder for signal <n1720> created at line 247.
+    Found 12-bit adder for signal <n1723> created at line 247.
+    Found 12-bit adder for signal <n1724> created at line 247.
+    Found 12-bit adder for signal <n1727> created at line 247.
+    Found 12-bit adder for signal <n1728> created at line 249.
+    Found 12-bit adder for signal <n1731> created at line 249.
+    Found 12-bit adder for signal <n1732> created at line 249.
+    Found 12-bit adder for signal <n1735> created at line 249.
+    Found 12-bit adder for signal <n1736> created at line 251.
+    Found 12-bit adder for signal <n1739> created at line 251.
+    Found 12-bit adder for signal <n1740> created at line 251.
+    Found 12-bit adder for signal <n1743> created at line 251.
+    Found 12-bit adder for signal <n1744> created at line 253.
+    Found 12-bit adder for signal <n1747> created at line 253.
+    Found 12-bit adder for signal <n1748> created at line 253.
+    Found 12-bit adder for signal <n1751> created at line 253.
+    Found 12-bit adder for signal <n1752> created at line 255.
+    Found 12-bit adder for signal <n1755> created at line 255.
+    Found 12-bit adder for signal <n1756> created at line 255.
+    Found 12-bit adder for signal <n1759> created at line 255.
+    Found 12-bit adder for signal <n1760> created at line 257.
+    Found 12-bit adder for signal <n1763> created at line 257.
+    Found 12-bit adder for signal <n1764> created at line 257.
+    Found 12-bit adder for signal <n1767> created at line 257.
+    Found 12-bit adder for signal <n1768> created at line 259.
+    Found 12-bit adder for signal <n1771> created at line 259.
+    Found 12-bit adder for signal <n1772> created at line 259.
+    Found 12-bit adder for signal <n1775> created at line 259.
+    Found 12-bit adder for signal <n1776> created at line 261.
+    Found 12-bit adder for signal <n1779> created at line 261.
+    Found 12-bit adder for signal <n1780> created at line 261.
+    Found 12-bit adder for signal <n1783> created at line 261.
+    Found 12-bit adder for signal <n1784> created at line 263.
+    Found 12-bit adder for signal <n1787> created at line 263.
+    Found 12-bit adder for signal <n1788> created at line 263.
+    Found 12-bit adder for signal <n1791> created at line 263.
+    Found 12-bit adder for signal <n1792> created at line 265.
+    Found 12-bit adder for signal <n1795> created at line 265.
+    Found 12-bit adder for signal <n1796> created at line 265.
+    Found 12-bit adder for signal <n1799> created at line 265.
+    Found 12-bit adder for signal <n1800> created at line 267.
+    Found 12-bit adder for signal <n1803> created at line 267.
+    Found 12-bit adder for signal <n1804> created at line 267.
+    Found 12-bit adder for signal <n1807> created at line 267.
+    Found 12-bit adder for signal <n1808> created at line 269.
+    Found 12-bit adder for signal <n1811> created at line 269.
+    Found 12-bit adder for signal <n1812> created at line 269.
+    Found 12-bit adder for signal <n1815> created at line 269.
+    Found 12-bit adder for signal <n1816> created at line 271.
+    Found 12-bit adder for signal <n1819> created at line 271.
+    Found 12-bit adder for signal <n1820> created at line 271.
+    Found 12-bit adder for signal <n1823> created at line 271.
+    Found 16-bit adder for signal <score[15]_GND_1_o_add_413_OUT> created at line 319.
+    Found 11-bit adder for signal <y[10]_GND_1_o_add_488_OUT> created at line 414.
+    Found 11-bit adder for signal <x[10]_GND_1_o_add_490_OUT> created at line 434.
+    Found 12-bit adder for signal <n1829> created at line 450.
+    Found 12-bit adder for signal <n1831> created at line 450.
+    Found 12-bit adder for signal <n1832> created at line 451.
+    Found 12-bit adder for signal <n1835> created at line 451.
+    Found 12-bit adder for signal <n1836> created at line 451.
+    Found 12-bit adder for signal <n1839> created at line 451.
+    Found 1-bit 4-to-1 multiplexer for signal <slow_count[25]_slow_count[25]_MUX_49_o> created at line 134.
+    Found 1-bit 4-to-1 multiplexer for signal <obstacle1_blank_MUX_1070_o> created at line 285.
+    Found 1-bit 4-to-1 multiplexer for signal <obstacle2_blank_MUX_1071_o> created at line 285.
+    Found 1-bit 4-to-1 multiplexer for signal <obstacle3_blank_MUX_1072_o> created at line 285.
+    Found 1-bit 4-to-1 multiplexer for signal <obstacle4_blank_MUX_1073_o> created at line 285.
+    Found 11-bit comparator lessequal for signal <n0018> created at line 167
+    Found 11-bit comparator lessequal for signal <n0020> created at line 167
+    Found 11-bit comparator lessequal for signal <n0023> created at line 167
+    Found 11-bit comparator lessequal for signal <n0026> created at line 167
+    Found 11-bit comparator lessequal for signal <n0030> created at line 168
+    Found 11-bit comparator lessequal for signal <n0033> created at line 168
+    Found 11-bit comparator lessequal for signal <n0038> created at line 170
+    Found 11-bit comparator lessequal for signal <n0040> created at line 170
+    Found 11-bit comparator lessequal for signal <n0044> created at line 170
+    Found 11-bit comparator lessequal for signal <n0048> created at line 171
+    Found 11-bit comparator lessequal for signal <n0057> created at line 173
+    Found 11-bit comparator lessequal for signal <n0063> created at line 175
+    Found 11-bit comparator lessequal for signal <n0065> created at line 175
+    Found 11-bit comparator lessequal for signal <n0071> created at line 176
+    Found 11-bit comparator lessequal for signal <n0075> created at line 176
+    Found 11-bit comparator lessequal for signal <n0079> created at line 177
+    Found 11-bit comparator lessequal for signal <n0082> created at line 177
+    Found 11-bit comparator lessequal for signal <n0086> created at line 178
+    Found 11-bit comparator lessequal for signal <n0089> created at line 178
+    Found 11-bit comparator lessequal for signal <n0097> created at line 181
+    Found 11-bit comparator lessequal for signal <n0099> created at line 181
+    Found 11-bit comparator lessequal for signal <n0105> created at line 182
+    Found 11-bit comparator lessequal for signal <n0117> created at line 186
+    Found 11-bit comparator lessequal for signal <n0119> created at line 186
+    Found 11-bit comparator lessequal for signal <n0125> created at line 187
+    Found 11-bit comparator lessequal for signal <n0134> created at line 189
+    Found 11-bit comparator lessequal for signal <n0140> created at line 192
+    Found 11-bit comparator lessequal for signal <n0142> created at line 192
+    Found 11-bit comparator lessequal for signal <n0145> created at line 192
+    Found 11-bit comparator lessequal for signal <n0148> created at line 192
+    Found 11-bit comparator lessequal for signal <n0152> created at line 193
+    Found 11-bit comparator lessequal for signal <n0154> created at line 193
+    Found 11-bit comparator lessequal for signal <n0157> created at line 193
+    Found 11-bit comparator lessequal for signal <n0160> created at line 193
+    Found 11-bit comparator lessequal for signal <n0164> created at line 194
+    Found 11-bit comparator lessequal for signal <n0166> created at line 194
+    Found 11-bit comparator lessequal for signal <n0169> created at line 194
+    Found 11-bit comparator lessequal for signal <n0172> created at line 194
+    Found 11-bit comparator lessequal for signal <n0176> created at line 195
+    Found 11-bit comparator lessequal for signal <n0178> created at line 195
+    Found 11-bit comparator lessequal for signal <n0181> created at line 195
+    Found 11-bit comparator lessequal for signal <n0184> created at line 195
+    Found 12-bit comparator lessequal for signal <n0293> created at line 223
+    Found 12-bit comparator lessequal for signal <n0296> created at line 223
+    Found 12-bit comparator lessequal for signal <n0300> created at line 223
+    Found 12-bit comparator lessequal for signal <n0304> created at line 223
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_147_o> created at line 224
+    Found 12-bit comparator lessequal for signal <n0311> created at line 225
+    Found 12-bit comparator lessequal for signal <n0314> created at line 225
+    Found 12-bit comparator lessequal for signal <n0318> created at line 225
+    Found 12-bit comparator lessequal for signal <n0322> created at line 225
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_156_o> created at line 226
+    Found 12-bit comparator lessequal for signal <n0329> created at line 227
+    Found 12-bit comparator lessequal for signal <n0332> created at line 227
+    Found 12-bit comparator lessequal for signal <n0336> created at line 227
+    Found 12-bit comparator lessequal for signal <n0340> created at line 227
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_165_o> created at line 228
+    Found 12-bit comparator lessequal for signal <n0347> created at line 229
+    Found 12-bit comparator lessequal for signal <n0350> created at line 229
+    Found 12-bit comparator lessequal for signal <n0354> created at line 229
+    Found 12-bit comparator lessequal for signal <n0358> created at line 229
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_174_o> created at line 230
+    Found 12-bit comparator lessequal for signal <n0365> created at line 231
+    Found 12-bit comparator lessequal for signal <n0368> created at line 231
+    Found 12-bit comparator lessequal for signal <n0372> created at line 231
+    Found 12-bit comparator lessequal for signal <n0376> created at line 231
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_183_o> created at line 232
+    Found 12-bit comparator lessequal for signal <n0383> created at line 233
+    Found 12-bit comparator lessequal for signal <n0386> created at line 233
+    Found 12-bit comparator lessequal for signal <n0390> created at line 233
+    Found 12-bit comparator lessequal for signal <n0394> created at line 233
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_192_o> created at line 234
+    Found 12-bit comparator lessequal for signal <n0401> created at line 235
+    Found 12-bit comparator lessequal for signal <n0404> created at line 235
+    Found 12-bit comparator lessequal for signal <n0408> created at line 235
+    Found 12-bit comparator lessequal for signal <n0412> created at line 235
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_201_o> created at line 236
+    Found 12-bit comparator lessequal for signal <n0419> created at line 237
+    Found 12-bit comparator lessequal for signal <n0422> created at line 237
+    Found 12-bit comparator lessequal for signal <n0426> created at line 237
+    Found 12-bit comparator lessequal for signal <n0430> created at line 237
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_210_o> created at line 238
+    Found 12-bit comparator lessequal for signal <n0437> created at line 239
+    Found 12-bit comparator lessequal for signal <n0440> created at line 239
+    Found 12-bit comparator lessequal for signal <n0444> created at line 239
+    Found 12-bit comparator lessequal for signal <n0448> created at line 239
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_219_o> created at line 240
+    Found 12-bit comparator lessequal for signal <n0455> created at line 241
+    Found 12-bit comparator lessequal for signal <n0458> created at line 241
+    Found 12-bit comparator lessequal for signal <n0462> created at line 241
+    Found 12-bit comparator lessequal for signal <n0466> created at line 241
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_228_o> created at line 242
+    Found 12-bit comparator lessequal for signal <n0473> created at line 243
+    Found 12-bit comparator lessequal for signal <n0476> created at line 243
+    Found 12-bit comparator lessequal for signal <n0480> created at line 243
+    Found 12-bit comparator lessequal for signal <n0484> created at line 243
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_237_o> created at line 244
+    Found 12-bit comparator lessequal for signal <n0491> created at line 245
+    Found 12-bit comparator lessequal for signal <n0494> created at line 245
+    Found 12-bit comparator lessequal for signal <n0498> created at line 245
+    Found 12-bit comparator lessequal for signal <n0502> created at line 245
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_246_o> created at line 246
+    Found 12-bit comparator lessequal for signal <n0509> created at line 247
+    Found 12-bit comparator lessequal for signal <n0512> created at line 247
+    Found 12-bit comparator lessequal for signal <n0516> created at line 247
+    Found 12-bit comparator lessequal for signal <n0520> created at line 247
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_255_o> created at line 248
+    Found 12-bit comparator lessequal for signal <n0527> created at line 249
+    Found 12-bit comparator lessequal for signal <n0530> created at line 249
+    Found 12-bit comparator lessequal for signal <n0534> created at line 249
+    Found 12-bit comparator lessequal for signal <n0538> created at line 249
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_264_o> created at line 250
+    Found 12-bit comparator lessequal for signal <n0545> created at line 251
+    Found 12-bit comparator lessequal for signal <n0548> created at line 251
+    Found 12-bit comparator lessequal for signal <n0552> created at line 251
+    Found 12-bit comparator lessequal for signal <n0556> created at line 251
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_273_o> created at line 252
+    Found 12-bit comparator lessequal for signal <n0563> created at line 253
+    Found 12-bit comparator lessequal for signal <n0566> created at line 253
+    Found 12-bit comparator lessequal for signal <n0570> created at line 253
+    Found 12-bit comparator lessequal for signal <n0574> created at line 253
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_282_o> created at line 254
+    Found 12-bit comparator lessequal for signal <n0581> created at line 255
+    Found 12-bit comparator lessequal for signal <n0584> created at line 255
+    Found 12-bit comparator lessequal for signal <n0588> created at line 255
+    Found 12-bit comparator lessequal for signal <n0592> created at line 255
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_291_o> created at line 256
+    Found 12-bit comparator lessequal for signal <n0599> created at line 257
+    Found 12-bit comparator lessequal for signal <n0602> created at line 257
+    Found 12-bit comparator lessequal for signal <n0606> created at line 257
+    Found 12-bit comparator lessequal for signal <n0610> created at line 257
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_300_o> created at line 258
+    Found 12-bit comparator lessequal for signal <n0617> created at line 259
+    Found 12-bit comparator lessequal for signal <n0620> created at line 259
+    Found 12-bit comparator lessequal for signal <n0624> created at line 259
+    Found 12-bit comparator lessequal for signal <n0628> created at line 259
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_309_o> created at line 260
+    Found 12-bit comparator lessequal for signal <n0635> created at line 261
+    Found 12-bit comparator lessequal for signal <n0638> created at line 261
+    Found 12-bit comparator lessequal for signal <n0642> created at line 261
+    Found 12-bit comparator lessequal for signal <n0646> created at line 261
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_318_o> created at line 262
+    Found 12-bit comparator lessequal for signal <n0653> created at line 263
+    Found 12-bit comparator lessequal for signal <n0656> created at line 263
+    Found 12-bit comparator lessequal for signal <n0660> created at line 263
+    Found 12-bit comparator lessequal for signal <n0664> created at line 263
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_327_o> created at line 264
+    Found 12-bit comparator lessequal for signal <n0671> created at line 265
+    Found 12-bit comparator lessequal for signal <n0674> created at line 265
+    Found 12-bit comparator lessequal for signal <n0678> created at line 265
+    Found 12-bit comparator lessequal for signal <n0682> created at line 265
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_336_o> created at line 266
+    Found 12-bit comparator lessequal for signal <n0689> created at line 267
+    Found 12-bit comparator lessequal for signal <n0692> created at line 267
+    Found 12-bit comparator lessequal for signal <n0696> created at line 267
+    Found 12-bit comparator lessequal for signal <n0700> created at line 267
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_345_o> created at line 268
+    Found 12-bit comparator lessequal for signal <n0707> created at line 269
+    Found 12-bit comparator lessequal for signal <n0710> created at line 269
+    Found 12-bit comparator lessequal for signal <n0714> created at line 269
+    Found 12-bit comparator lessequal for signal <n0718> created at line 269
+    Found 16-bit comparator greater for signal <GND_1_o_score[15]_LessThan_354_o> created at line 270
+    Found 12-bit comparator lessequal for signal <n0725> created at line 271
+    Found 12-bit comparator lessequal for signal <n0728> created at line 271
+    Found 12-bit comparator lessequal for signal <n0732> created at line 271
+    Found 12-bit comparator lessequal for signal <n0736> created at line 271
+    Found 11-bit comparator lessequal for signal <n0742> created at line 278
+    Found 11-bit comparator lessequal for signal <n0744> created at line 278
+    Found 11-bit comparator lessequal for signal <n0747> created at line 278
+    Found 11-bit comparator lessequal for signal <n0750> created at line 278
+    Found 11-bit comparator lessequal for signal <n0754> created at line 279
+    Found 11-bit comparator lessequal for signal <n0757> created at line 279
+    Found 11-bit comparator lessequal for signal <n0761> created at line 280
+    Found 11-bit comparator lessequal for signal <n0767> created at line 281
+    Found 11-bit comparator lessequal for signal <n0774> created at line 287
+    Found 11-bit comparator lessequal for signal <n0776> created at line 287
+    Found 11-bit comparator lessequal for signal <n0779> created at line 287
+    Found 11-bit comparator lessequal for signal <n0782> created at line 287
+    Found 11-bit comparator lessequal for signal <n0786> created at line 288
+    Found 11-bit comparator lessequal for signal <n0788> created at line 288
+    Found 11-bit comparator lessequal for signal <n0791> created at line 288
+    Found 11-bit comparator lessequal for signal <n0794> created at line 288
+    Found 11-bit comparator lessequal for signal <n0798> created at line 289
+    Found 11-bit comparator lessequal for signal <n0801> created at line 289
+    Found 11-bit comparator lessequal for signal <n0805> created at line 290
+    Found 11-bit comparator lessequal for signal <n0807> created at line 290
+    Found 11-bit comparator lessequal for signal <n0814> created at line 295
+    Found 11-bit comparator lessequal for signal <n0816> created at line 295
+    Found 11-bit comparator lessequal for signal <n0819> created at line 295
+    Found 11-bit comparator lessequal for signal <n0822> created at line 295
+    Found 11-bit comparator lessequal for signal <n0826> created at line 296
+    Found 11-bit comparator lessequal for signal <n0829> created at line 296
+    Found 11-bit comparator lessequal for signal <n0833> created at line 297
+    Found 11-bit comparator lessequal for signal <n0836> created at line 297
+    Found 11-bit comparator lessequal for signal <n0840> created at line 298
+    Found 11-bit comparator lessequal for signal <n0843> created at line 298
+    Found 11-bit comparator lessequal for signal <n1275> created at line 450
+    Found 12-bit comparator lessequal for signal <n1278> created at line 450
+    Found 11-bit comparator lessequal for signal <n1281> created at line 450
+    Found 12-bit comparator lessequal for signal <n1285> created at line 450
+    Found 12-bit comparator lessequal for signal <n1291> created at line 451
+    Found 12-bit comparator lessequal for signal <n1294> created at line 451
+    Found 12-bit comparator lessequal for signal <n1298> created at line 451
+    Found 12-bit comparator lessequal for signal <n1302> created at line 451
+    WARNING:Xst:2404 -  FFs/Latches <next_state<4:4>> (without init value) have a constant value of 0 in block <Snake>.
+    Summary:
+	inferred 115 Adder/Subtractor(s).
+	inferred 744 D-type flip-flop(s).
+	inferred 204 Comparator(s).
+	inferred 186 Multiplexer(s).
+Unit <Snake> synthesized.
+
+Synthesizing Unit <clk1khz>.
+    Related source file is "//ad/eng/users/c/s/csu121-adm/desktop/ek311/snake_final_project/snake.v".
+    Found 1-bit register for signal <oclk>.
+    Found 16-bit register for signal <count>.
+    Found 16-bit adder for signal <count[15]_GND_2_o_add_1_OUT> created at line 589.
+    Found 16-bit comparator lessequal for signal <n0001> created at line 590
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <clk1khz> synthesized.
+
+Synthesizing Unit <BCD>.
+    Related source file is "//ad/eng/users/c/s/csu121-adm/desktop/ek311/snake_final_project/snake.v".
+WARNING:Xst:647 - Input <binary<15:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit adder for signal <n0094> created at line 484.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_4_OUT> created at line 484.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_7_OUT> created at line 484.
+    Found 4-bit adder for signal <n0104> created at line 482.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_13_OUT> created at line 484.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_16_OUT> created at line 482.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_19_OUT> created at line 484.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_22_OUT> created at line 482.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_25_OUT> created at line 484.
+    Found 4-bit adder for signal <n0123> created at line 480.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_31_OUT> created at line 482.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_34_OUT> created at line 484.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_37_OUT> created at line 480.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_40_OUT> created at line 482.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_43_OUT> created at line 484.
+    Found 3-bit comparator lessequal for signal <n0000> created at line 483
+    Found 4-bit comparator lessequal for signal <n0004> created at line 483
+    Found 4-bit comparator lessequal for signal <n0008> created at line 483
+    Found 3-bit comparator lessequal for signal <n0012> created at line 481
+    Found 4-bit comparator lessequal for signal <n0016> created at line 483
+    Found 4-bit comparator lessequal for signal <n0020> created at line 481
+    Found 4-bit comparator lessequal for signal <n0024> created at line 483
+    Found 4-bit comparator lessequal for signal <n0028> created at line 481
+    Found 4-bit comparator lessequal for signal <n0032> created at line 483
+    Found 3-bit comparator lessequal for signal <n0036> created at line 479
+    Found 4-bit comparator lessequal for signal <n0040> created at line 481
+    Found 4-bit comparator lessequal for signal <n0044> created at line 483
+    Found 4-bit comparator lessequal for signal <n0048> created at line 479
+    Found 4-bit comparator lessequal for signal <n0052> created at line 481
+    Found 4-bit comparator lessequal for signal <n0056> created at line 483
+    Summary:
+	inferred  15 Adder/Subtractor(s).
+	inferred  15 Comparator(s).
+	inferred  15 Multiplexer(s).
+Unit <BCD> synthesized.
+
+Synthesizing Unit <sevenalternate>.
+    Related source file is "//ad/eng/users/c/s/csu121-adm/desktop/ek311/snake_final_project/snake.v".
+    Found 4-bit register for signal <smallbin>.
+    Found 2-bit register for signal <count>.
+    Found 4-bit register for signal <AN>.
+    Found 2-bit adder for signal <count[1]_GND_4_o_add_3_OUT> created at line 574.
+    Found 4x4-bit Read Only RAM for signal <count[1]_GND_4_o_wide_mux_1_OUT>
+    Found 4-bit 4-to-1 multiplexer for signal <count[1]_bigbin[15]_wide_mux_2_OUT> created at line 547.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <sevenalternate> synthesized.
+
+Synthesizing Unit <binarytoseven>.
+    Related source file is "//ad/eng/users/c/s/csu121-adm/desktop/ek311/snake_final_project/snake.v".
+    Found 16x7-bit Read Only RAM for signal <seven>
+    Summary:
+	inferred   1 RAM(s).
+Unit <binarytoseven> synthesized.
+
+Synthesizing Unit <mod_16u_10u>.
+    Related source file is "".
+    Found 26-bit adder for signal <GND_6_o_b[9]_add_1_OUT> created at line 0.
+    Found 25-bit adder for signal <GND_6_o_b[9]_add_3_OUT> created at line 0.
+    Found 24-bit adder for signal <GND_6_o_b[9]_add_5_OUT> created at line 0.
+    Found 23-bit adder for signal <GND_6_o_b[9]_add_7_OUT> created at line 0.
+    Found 22-bit adder for signal <GND_6_o_b[9]_add_9_OUT> created at line 0.
+    Found 21-bit adder for signal <GND_6_o_b[9]_add_11_OUT> created at line 0.
+    Found 20-bit adder for signal <GND_6_o_b[9]_add_13_OUT> created at line 0.
+    Found 19-bit adder for signal <GND_6_o_b[9]_add_15_OUT> created at line 0.
+    Found 18-bit adder for signal <GND_6_o_b[9]_add_17_OUT> created at line 0.
+    Found 17-bit adder for signal <GND_6_o_b[9]_add_19_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_b[9]_add_21_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_6_o_add_23_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_6_o_add_25_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_6_o_add_27_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_6_o_add_29_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_6_o_add_31_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_6_o_add_33_OUT> created at line 0.
+    Found 26-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 25-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 23-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 22-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 20-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 19-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 18-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 17-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Summary:
+	inferred  17 Adder/Subtractor(s).
+	inferred  17 Comparator(s).
+	inferred 257 Multiplexer(s).
+Unit <mod_16u_10u> synthesized.
+
+Synthesizing Unit <mod_16u_9u>.
+    Related source file is "".
+    Found 25-bit adder for signal <GND_7_o_b[8]_add_1_OUT> created at line 0.
+    Found 24-bit adder for signal <GND_7_o_b[8]_add_3_OUT> created at line 0.
+    Found 23-bit adder for signal <GND_7_o_b[8]_add_5_OUT> created at line 0.
+    Found 22-bit adder for signal <GND_7_o_b[8]_add_7_OUT> created at line 0.
+    Found 21-bit adder for signal <GND_7_o_b[8]_add_9_OUT> created at line 0.
+    Found 20-bit adder for signal <GND_7_o_b[8]_add_11_OUT> created at line 0.
+    Found 19-bit adder for signal <GND_7_o_b[8]_add_13_OUT> created at line 0.
+    Found 18-bit adder for signal <GND_7_o_b[8]_add_15_OUT> created at line 0.
+    Found 17-bit adder for signal <GND_7_o_b[8]_add_17_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_b[8]_add_19_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_7_o_add_21_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_7_o_add_23_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_7_o_add_25_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_7_o_add_27_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_7_o_add_29_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_7_o_add_31_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_7_o_add_33_OUT> created at line 0.
+    Found 25-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 23-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 22-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 20-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 19-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 18-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 17-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Summary:
+	inferred  17 Adder/Subtractor(s).
+	inferred  17 Comparator(s).
+	inferred 257 Multiplexer(s).
+Unit <mod_16u_9u> synthesized.
+
+Synthesizing Unit <vga_controller_640_60>.
+    Related source file is "//ad/eng/users/c/s/csu121-adm/desktop/ek311/snake_final_project/snake.v".
+        HMAX = 800
+        VMAX = 525
+        HLINES = 640
+        HFP = 648
+        HSP = 744
+        VLINES = 480
+        VFP = 482
+        VSP = 484
+        SPP = 0
+    Found 11-bit register for signal <hcounter>.
+    Found 11-bit register for signal <vcounter>.
+    Found 1-bit register for signal <HS>.
+    Found 1-bit register for signal <VS>.
+    Found 1-bit register for signal <blank>.
+    Found 11-bit adder for signal <hcounter[10]_GND_8_o_add_3_OUT> created at line 627.
+    Found 11-bit adder for signal <vcounter[10]_GND_8_o_add_9_OUT> created at line 634.
+    Found 11-bit comparator lessequal for signal <n0011> created at line 641
+    Found 11-bit comparator greater for signal <hcounter[10]_GND_8_o_LessThan_16_o> created at line 641
+    Found 11-bit comparator lessequal for signal <n0017> created at line 648
+    Found 11-bit comparator greater for signal <vcounter[10]_GND_8_o_LessThan_19_o> created at line 648
+    Found 11-bit comparator greater for signal <hcounter[10]_GND_8_o_LessThan_20_o> created at line 654
+    Found 11-bit comparator greater for signal <vcounter[10]_GND_8_o_LessThan_21_o> created at line 654
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  25 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <vga_controller_640_60> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port Read Only RAM                    : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 168
+ 11-bit adder                                          : 4
+ 11-bit subtractor                                     : 2
+ 12-bit adder                                          : 106
+ 16-bit adder                                          : 19
+ 17-bit adder                                          : 2
+ 18-bit adder                                          : 2
+ 19-bit adder                                          : 2
+ 2-bit adder                                           : 2
+ 20-bit adder                                          : 2
+ 21-bit adder                                          : 2
+ 22-bit adder                                          : 2
+ 23-bit adder                                          : 2
+ 24-bit adder                                          : 2
+ 25-bit adder                                          : 2
+ 26-bit adder                                          : 2
+ 4-bit adder                                           : 15
+# Registers                                            : 135
+ 1-bit register                                        : 67
+ 11-bit register                                       : 56
+ 16-bit register                                       : 4
+ 2-bit register                                        : 3
+ 26-bit register                                       : 1
+ 4-bit register                                        : 3
+ 5-bit register                                        : 1
+# Comparators                                          : 260
+ 11-bit comparator greater                             : 4
+ 11-bit comparator lessequal                           : 76
+ 12-bit comparator lessequal                           : 106
+ 16-bit comparator greater                             : 24
+ 16-bit comparator lessequal                           : 16
+ 17-bit comparator lessequal                           : 2
+ 18-bit comparator lessequal                           : 2
+ 19-bit comparator lessequal                           : 2
+ 20-bit comparator lessequal                           : 2
+ 21-bit comparator lessequal                           : 2
+ 22-bit comparator lessequal                           : 2
+ 23-bit comparator lessequal                           : 2
+ 24-bit comparator lessequal                           : 2
+ 25-bit comparator lessequal                           : 2
+ 26-bit comparator lessequal                           : 1
+ 3-bit comparator lessequal                            : 3
+ 4-bit comparator lessequal                            : 12
+# Multiplexers                                         : 716
+ 1-bit 2-to-1 multiplexer                              : 585
+ 1-bit 4-to-1 multiplexer                              : 5
+ 10-bit 2-to-1 multiplexer                             : 1
+ 11-bit 2-to-1 multiplexer                             : 102
+ 16-bit 2-to-1 multiplexer                             : 6
+ 4-bit 2-to-1 multiplexer                              : 15
+ 4-bit 4-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <state_4> (without init value) has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <state<4:4>> (without init value) have a constant value of 0 in block <Snake>.
+
+Synthesizing (advanced) Unit <Snake>.
+The following registers are absorbed into counter <slow_count>: 1 register on signal <slow_count>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <Snake> synthesized (advanced).
+
+Synthesizing (advanced) Unit <binarytoseven>.
+INFO:Xst:3231 - The small RAM <Mram_seven> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <bin>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <seven>         |          |
+    -----------------------------------------------------------------------
+Unit <binarytoseven> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clk1khz>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <clk1khz> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sevenalternate>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+INFO:Xst:3231 - The small RAM <Mram_count[1]_GND_4_o_wide_mux_1_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <count>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <sevenalternate> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga_controller_640_60>.
+The following registers are absorbed into counter <hcounter>: 1 register on signal <hcounter>.
+The following registers are absorbed into counter <vcounter>: 1 register on signal <vcounter>.
+Unit <vga_controller_640_60> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 163
+ 10-bit adder                                          : 1
+ 11-bit adder                                          : 2
+ 11-bit subtractor                                     : 2
+ 12-bit adder                                          : 106
+ 16-bit adder                                          : 35
+ 26-bit adder                                          : 1
+ 4-bit adder                                           : 15
+ 9-bit adder                                           : 1
+# Counters                                             : 6
+ 11-bit up counter                                     : 2
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 2
+ 26-bit up counter                                     : 1
+# Registers                                            : 727
+ Flip-Flops                                            : 727
+# Comparators                                          : 260
+ 11-bit comparator greater                             : 4
+ 11-bit comparator lessequal                           : 76
+ 12-bit comparator lessequal                           : 106
+ 16-bit comparator greater                             : 24
+ 16-bit comparator lessequal                           : 16
+ 17-bit comparator lessequal                           : 2
+ 18-bit comparator lessequal                           : 2
+ 19-bit comparator lessequal                           : 2
+ 20-bit comparator lessequal                           : 2
+ 21-bit comparator lessequal                           : 2
+ 22-bit comparator lessequal                           : 2
+ 23-bit comparator lessequal                           : 2
+ 24-bit comparator lessequal                           : 2
+ 25-bit comparator lessequal                           : 2
+ 26-bit comparator lessequal                           : 1
+ 3-bit comparator lessequal                            : 3
+ 4-bit comparator lessequal                            : 12
+# Multiplexers                                         : 716
+ 1-bit 2-to-1 multiplexer                              : 585
+ 1-bit 4-to-1 multiplexer                              : 5
+ 10-bit 2-to-1 multiplexer                             : 1
+ 11-bit 2-to-1 multiplexer                             : 102
+ 16-bit 2-to-1 multiplexer                             : 6
+ 4-bit 2-to-1 multiplexer                              : 15
+ 4-bit 4-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2146 - In block <Snake>, Counter <slow_count> <count> are equivalent, XST will keep only <slow_count>.
+WARNING:Xst:1293 - FF/Latch <foodxcount_10> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <foodxcount_11> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <foodxcount_12> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <foodxcount_13> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <foodxcount_14> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <foodxcount_15> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <foodycount_9> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <foodycount_10> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <foodycount_11> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <foodycount_12> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <foodycount_13> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <foodycount_14> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <foodycount_15> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <slow_count_25> of sequential type is unconnected in block <Snake>.
+WARNING:Xst:1293 - FF/Latch <foodx_10> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <foody_9> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <foody_10> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Snake> ...
+WARNING:Xst:1293 - FF/Latch <foodxcount_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <foodxcount_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <foodycount_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <foodycount_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <foodx_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <foodx_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <foody_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <foody_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y11_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y12_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y12_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y13_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y13_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y14_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y14_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y15_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y15_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y16_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y16_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y17_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y17_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y18_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y18_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y19_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y19_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y20_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y20_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y21_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y21_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y22_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y22_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y23_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y23_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y1_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y1_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y2_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y2_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y3_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y3_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y4_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y4_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y5_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y5_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y6_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y6_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y7_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y7_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y8_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y8_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y9_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y9_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y10_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y10_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y11_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x12_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x13_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x13_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x14_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x14_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x15_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x15_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x16_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x16_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x17_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x17_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x18_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x18_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x19_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x19_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x20_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x20_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x21_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x21_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x22_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x22_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x23_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x23_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x1_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x1_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x2_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x2_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x3_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x3_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x4_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x4_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x5_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x5_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x6_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x6_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x7_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x7_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x8_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x8_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x9_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x9_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x10_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x10_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x11_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x11_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x12_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x18_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x18_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y18_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y18_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y17_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y17_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x17_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x17_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y16_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y16_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x16_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x16_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y15_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y15_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x15_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x15_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y14_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y14_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x14_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x14_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y13_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y13_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x13_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x13_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y24_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y24_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x24_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x24_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x23_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x23_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y23_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y23_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y22_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y22_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x22_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x22_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y21_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y21_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x21_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x21_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y20_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y20_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x20_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x20_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y19_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y19_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x19_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x19_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y6_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y6_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x6_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x6_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y5_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y5_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x5_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x5_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x4_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x4_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y4_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y4_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y3_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y3_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x3_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x3_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y2_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y2_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x2_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x2_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y1_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y1_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x1_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x1_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y12_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y12_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x12_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x12_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x11_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x11_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y11_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y11_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y10_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y10_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x10_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x10_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y9_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y9_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x9_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x9_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y8_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y8_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x8_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x8_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y7_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y7_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x7_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x7_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y25_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y25_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x25_0> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x25_1> has a constant value of 0 in block <Snake>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <sevenalternate> ...
+
+Optimizing unit <vga_controller_640_60> ...
+
+Optimizing unit <BCD> ...
+INFO:Xst:2261 - The FF/Latch <slow_count_10> in Unit <Snake> is equivalent to the following FF/Latch, which will be removed : <clock/count_10> 
+INFO:Xst:2261 - The FF/Latch <slow_count_11> in Unit <Snake> is equivalent to the following FF/Latch, which will be removed : <clock/count_11> 
+INFO:Xst:2261 - The FF/Latch <slow_count_12> in Unit <Snake> is equivalent to the following FF/Latch, which will be removed : <clock/count_12> 
+INFO:Xst:2261 - The FF/Latch <slow_count_13> in Unit <Snake> is equivalent to the following FF/Latch, which will be removed : <clock/count_13> 
+INFO:Xst:2261 - The FF/Latch <slow_count_14> in Unit <Snake> is equivalent to the following FF/Latch, which will be removed : <clock/count_14> 
+INFO:Xst:2261 - The FF/Latch <slow_count_15> in Unit <Snake> is equivalent to the following FF/Latch, which will be removed : <clock/count_15> 
+INFO:Xst:2261 - The FF/Latch <slow_count_0> in Unit <Snake> is equivalent to the following FF/Latch, which will be removed : <clock/count_0> 
+INFO:Xst:2261 - The FF/Latch <slow_count_1> in Unit <Snake> is equivalent to the following FF/Latch, which will be removed : <clock/count_1> 
+INFO:Xst:2261 - The FF/Latch <slow_count_2> in Unit <Snake> is equivalent to the following FF/Latch, which will be removed : <clock/count_2> 
+INFO:Xst:2261 - The FF/Latch <slow_count_3> in Unit <Snake> is equivalent to the following FF/Latch, which will be removed : <clock/count_3> 
+INFO:Xst:2261 - The FF/Latch <slow_count_4> in Unit <Snake> is equivalent to the following FF/Latch, which will be removed : <clock/count_4> 
+INFO:Xst:2261 - The FF/Latch <slow_count_5> in Unit <Snake> is equivalent to the following FF/Latch, which will be removed : <clock/count_5> 
+INFO:Xst:2261 - The FF/Latch <slow_count_6> in Unit <Snake> is equivalent to the following FF/Latch, which will be removed : <clock/count_6> 
+INFO:Xst:2261 - The FF/Latch <slow_count_7> in Unit <Snake> is equivalent to the following FF/Latch, which will be removed : <clock/count_7> 
+INFO:Xst:2261 - The FF/Latch <slow_count_8> in Unit <Snake> is equivalent to the following FF/Latch, which will be removed : <clock/count_8> 
+INFO:Xst:2261 - The FF/Latch <slow_count_9> in Unit <Snake> is equivalent to the following FF/Latch, which will be removed : <clock/count_9> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Snake, actual ratio is 40.
+FlipFlop score_1 has been replicated 1 time(s)
+FlipFlop score_12 has been replicated 1 time(s)
+FlipFlop score_2 has been replicated 1 time(s)
+FlipFlop score_3 has been replicated 1 time(s)
+FlipFlop score_4 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 653
+ Flip-Flops                                            : 653
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Snake.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3536
+#      GND                         : 1
+#      INV                         : 73
+#      LUT1                        : 85
+#      LUT2                        : 247
+#      LUT3                        : 150
+#      LUT4                        : 1537
+#      LUT5                        : 214
+#      LUT6                        : 429
+#      MUXCY                       : 665
+#      MUXF7                       : 25
+#      VCC                         : 1
+#      XORCY                       : 109
+# FlipFlops/Latches                : 653
+#      FD                          : 587
+#      FDE                         : 19
+#      FDR                         : 18
+#      FDRE                        : 25
+#      FDSE                        : 4
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 25
+#      IBUF                        : 9
+#      OBUF                        : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             653  out of  18224     3%  
+ Number of Slice LUTs:                 2735  out of   9112    30%  
+    Number used as Logic:              2735  out of   9112    30%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2750
+   Number with an unused Flip Flop:    2097  out of   2750    76%  
+   Number with an unused LUT:            15  out of   2750     0%  
+   Number of fully used LUT-FF pairs:   638  out of   2750    23%  
+   Number of unique control sets:        12
+
+IO Utilization: 
+ Number of IOs:                          26
+ Number of bonded IOBs:                  26  out of    232    11%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 146   |
+slow_clk                           | BUFG                   | 472   |
+clock/oclk                         | NONE(brah/count_1)     | 10    |
+clk_25Mhz                          | BUFG                   | 25    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 8.191ns (Maximum Frequency: 122.078MHz)
+   Minimum input arrival time before clock: 10.245ns
+   Maximum output required time after clock: 4.821ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.191ns (frequency: 122.078MHz)
+  Total number of paths / destination ports: 67093 / 159
+-------------------------------------------------------------------------
+Delay:               8.191ns (Levels of Logic = 6)
+  Source:            score_10 (FF)
+  Destination:       foodx_2 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: score_10 to foodx_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              17   0.447   1.028  score_10 (score_10)
+     LUT2:I1->O            2   0.205   0.617  Mmux_snakesegment15_blank_MUX_1051_o111_SW0 (N10)
+     LUT6:I5->O           11   0.205   0.883  Mmux_snakesegment15_blank_MUX_1051_o111_1 (Mmux_snakesegment15_blank_MUX_1051_o1111)
+     LUT6:I5->O            2   0.205   0.981  Mmux_snakesegment23_blank_MUX_1059_o1 (snakesegment23_blank_MUX_1059_o)
+     LUT6:I0->O            2   0.203   0.961  snakehead_snakesegment25_OR_84_o15 (snakehead_snakesegment25_OR_84_o15)
+     LUT6:I1->O            6   0.203   0.745  snakehead_snakesegment25_OR_84_o17 (snakehead_snakesegment25_OR_84_o1)
+     LUT6:I5->O           15   0.205   0.981  _n2288_inv1 (_n2288_inv)
+     FDE:CE                    0.322          foodx_2
+    ----------------------------------------
+    Total                      8.191ns (1.995ns logic, 6.196ns route)
+                                       (24.4% logic, 75.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'slow_clk'
+  Clock period: 7.014ns (frequency: 142.562MHz)
+  Total number of paths / destination ports: 2792 / 468
+-------------------------------------------------------------------------
+Delay:               7.014ns (Levels of Logic = 7)
+  Source:            y_6 (FF)
+  Destination:       y_9 (FF)
+  Source Clock:      slow_clk rising
+  Destination Clock: slow_clk rising
+
+  Data Path: y_6 to y_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              15   0.447   1.086  y_6 (y_6)
+     LUT2:I0->O            1   0.203   0.580  Mmux__n2154122101_SW0 (N12)
+     LUT6:I5->O            6   0.205   0.745  Mmux__n2154122101 (Mmux__n2154122101)
+     LUT4:I3->O            7   0.205   0.774  _n2360<3>1 (Madd_y[10]_GND_1_o_add_488_OUT_lut<8>)
+     LUT4:I3->O            3   0.205   0.651  state[4]_y[10]_select_547_OUT<10>41 (state[4]_y[10]_select_547_OUT<10>4)
+     LUT6:I5->O            2   0.205   0.617  state[4]_y[10]_select_547_OUT<10>2111 (state[4]_y[10]_select_547_OUT<10>211)
+     LUT6:I5->O            1   0.205   0.580  state[4]_y[10]_select_547_OUT<10>3 (state[4]_y[10]_select_547_OUT<10>5)
+     LUT6:I5->O            1   0.205   0.000  state[4]_y[10]_select_547_OUT<10>6 (state[4]_y[10]_select_547_OUT<10>)
+     FD:D                      0.102          y_10
+    ----------------------------------------
+    Total                      7.014ns (1.982ns logic, 5.033ns route)
+                                       (28.3% logic, 71.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock/oclk'
+  Clock period: 2.190ns (frequency: 456.663MHz)
+  Total number of paths / destination ports: 20 / 10
+-------------------------------------------------------------------------
+Delay:               2.190ns (Levels of Logic = 1)
+  Source:            brah/count_0 (FF)
+  Destination:       brah/count_0 (FF)
+  Source Clock:      clock/oclk rising
+  Destination Clock: clock/oclk rising
+
+  Data Path: brah/count_0 to brah/count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              10   0.447   0.856  brah/count_0 (brah/count_0)
+     INV:I->O              1   0.206   0.579  brah/Mcount_count_xor<0>11_INV_0 (brah/Result<0>)
+     FD:D                      0.102          brah/count_0
+    ----------------------------------------
+    Total                      2.190ns (0.755ns logic, 1.435ns route)
+                                       (34.5% logic, 65.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_25Mhz'
+  Clock period: 6.547ns (frequency: 152.736MHz)
+  Total number of paths / destination ports: 644 / 58
+-------------------------------------------------------------------------
+Delay:               6.547ns (Levels of Logic = 3)
+  Source:            vc/hcounter_3 (FF)
+  Destination:       vc/vcounter_10 (FF)
+  Source Clock:      clk_25Mhz rising
+  Destination Clock: clk_25Mhz rising
+
+  Data Path: vc/hcounter_3 to vc/vcounter_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q            137   0.447   2.339  vc/hcounter_3 (vc/hcounter_3)
+     LUT6:I0->O            1   0.203   0.580  vc/GND_8_o_GND_8_o_equal_3_o<10>_SW0 (N130)
+     LUT6:I5->O           23   0.205   1.258  vc/GND_8_o_GND_8_o_equal_3_o<10> (vc/GND_8_o_GND_8_o_equal_3_o)
+     LUT2:I0->O           11   0.203   0.882  vc/_n00453 (vc/_n0045)
+     FDRE:R                    0.430          vc/vcounter_0
+    ----------------------------------------
+    Total                      6.547ns (1.488ns logic, 5.059ns route)
+                                       (22.7% logic, 77.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1488 / 133
+-------------------------------------------------------------------------
+Offset:              10.245ns (Levels of Logic = 7)
+  Source:            reset (PAD)
+  Destination:       foodx_2 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to foodx_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           627   1.222   2.222  reset_IBUF (reset_IBUF)
+     LUT5:I3->O            1   0.203   0.827  Mmux_snakesegment7_blank_MUX_1043_o11_SW0 (N446)
+     LUT6:I2->O            1   0.203   0.924  Mmux_snakesegment7_blank_MUX_1043_o11 (Mmux_snakesegment7_blank_MUX_1043_o1)
+     LUT6:I1->O            2   0.203   0.845  Mmux_snakesegment7_blank_MUX_1043_o14 (snakesegment7_blank_MUX_1043_o)
+     LUT6:I3->O           13   0.205   0.933  snakehead_snakesegment25_OR_84_o13 (snakehead_snakesegment25_OR_84_o13)
+     LUT6:I5->O            6   0.205   0.745  snakehead_snakesegment25_OR_84_o17 (snakehead_snakesegment25_OR_84_o1)
+     LUT6:I5->O           15   0.205   0.981  _n2288_inv1 (_n2288_inv)
+     FDE:CE                    0.322          foodx_2
+    ----------------------------------------
+    Total                     10.245ns (2.768ns logic, 7.477ns route)
+                                       (27.0% logic, 73.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'slow_clk'
+  Total number of paths / destination ports: 704 / 486
+-------------------------------------------------------------------------
+Offset:              8.673ns (Levels of Logic = 7)
+  Source:            reset (PAD)
+  Destination:       y_10 (FF)
+  Destination Clock: slow_clk rising
+
+  Data Path: reset to y_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           627   1.222   2.346  reset_IBUF (reset_IBUF)
+     LUT3:I0->O            3   0.205   0.755  y[10]_PWR_1_o_equal_485_o<10>_SW0 (N80)
+     LUT6:I4->O           16   0.203   1.109  y[10]_PWR_1_o_equal_485_o<10> (y[10]_PWR_1_o_equal_485_o)
+     LUT4:I2->O            3   0.203   0.651  state[4]_y[10]_select_547_OUT<10>31 (state[4]_y[10]_select_547_OUT<10>3)
+     LUT4:I3->O            1   0.205   0.684  state[4]_y[10]_select_547_OUT<10>2 (state[4]_y[10]_select_547_OUT<10>2)
+     LUT6:I4->O            1   0.203   0.580  state[4]_y[10]_select_547_OUT<10>3 (state[4]_y[10]_select_547_OUT<10>5)
+     LUT6:I5->O            1   0.205   0.000  state[4]_y[10]_select_547_OUT<10>6 (state[4]_y[10]_select_547_OUT<10>)
+     FD:D                      0.102          y_10
+    ----------------------------------------
+    Total                      8.673ns (2.548ns logic, 6.125ns route)
+                                       (29.4% logic, 70.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock/oclk'
+  Total number of paths / destination ports: 32 / 11
+-------------------------------------------------------------------------
+Offset:              4.821ns (Levels of Logic = 2)
+  Source:            brah/smallbin_1 (FF)
+  Destination:       seven<6> (PAD)
+  Source Clock:      clock/oclk rising
+
+  Data Path: brah/smallbin_1 to seven<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.447   1.021  brah/smallbin_1 (brah/smallbin_1)
+     LUT4:I0->O            1   0.203   0.579  broo/Mram_seven61 (seven_6_OBUF)
+     OBUF:I->O                 2.571          seven_6_OBUF (seven<6>)
+    ----------------------------------------
+    Total                      4.821ns (3.221ns logic, 1.600ns route)
+                                       (66.8% logic, 33.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            B (FF)
+  Destination:       B (PAD)
+  Source Clock:      clk rising
+
+  Data Path: B to B
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.579  B (B_OBUF)
+     OBUF:I->O                 2.571          B_OBUF (B)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_25Mhz'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            vc/VS (FF)
+  Destination:       VS (PAD)
+  Source Clock:      clk_25Mhz rising
+
+  Data Path: vc/VS to VS
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.447   0.579  vc/VS (vc/VS)
+     OBUF:I->O                 2.571          VS_OBUF (VS)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    8.191|         |         |         |
+clk_25Mhz      |   12.030|         |         |         |
+slow_clk       |   11.657|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_25Mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_25Mhz      |    6.547|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clock/oclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   10.074|         |         |         |
+clock/oclk     |    2.190|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock slow_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.984|         |         |         |
+slow_clk       |    7.014|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 44.00 secs
+Total CPU time to Xst completion: 44.29 secs
+ 
+--> 
+
+Total memory usage is 318100 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  240 (   0 filtered)
+Number of infos    :   20 (   0 filtered)
+

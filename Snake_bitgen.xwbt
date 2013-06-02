@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=X:\Desktop\EK311\Snake_Final_Project\Snake.ncd
+OUTFILE=X:\Desktop\EK311\Snake_Final_Project\Snake.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=X:\Desktop\EK311\Snake_Final_Project
+LICENSE=ISE
+USER_INFO=174135685_174135686_210550880_921
